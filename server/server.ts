@@ -1,8 +1,58 @@
 // Trivia Game Server Backend.
-import express, { Request, Response } from 'express';
+import express, { Request, Response, NextFunction } from 'express';
 import { StatusCodes } from "http-status-codes"
+import path from 'path';
+import winston from 'winston';
+import chalk from 'chalk';
+import { DateTime } from 'luxon';
+import { standardFormatDate } from './helpers';
 
+// ----- Server Setup ------
 const app = express();
+
+// Logging setup
+const MiBSize = 1024 * 1024;
+const maxFileSize = 50 * MiBSize; // 50 MiB
+const maxLogFiles = 3; // 3 log files max are created when logging.
+const loggingTransports: winston.transport[] = [
+  new winston.transports.File({ filename: path.resolve('logs/error.log'), level: 'error', maxFiles: maxLogFiles, maxsize: maxFileSize }),
+  new winston.transports.File({ filename: path.resolve('logs/combined.log'), maxFiles: maxLogFiles, maxsize: maxFileSize }),
+  new winston.transports.Console({
+    format: winston.format.combine(
+      winston.format.colorize(),
+      winston.format.simple()
+    )
+  }),
+];
+
+const logger = winston.createLogger({
+  level: process.env.LOG_LEVEL || 'info',
+  format: winston.format.combine(winston.format.errors({ stack: true }), winston.format.timestamp(), winston.format.json()),
+  transports: loggingTransports
+})
+
+// Middleware
+app.use(express.json()); // parse request bodies as JSON
+app.use(express.urlencoded({ extended: true })); // parse url-encoded content
+
+app.use((req: Request, res: Response, next: NextFunction) => {
+  const dateString = `[${standardFormatDate(DateTime.now())}]`
+
+  let endpointStringColor;
+  const requestMethod = req.method.toUpperCase();
+  if (requestMethod === "GET") {
+    endpointStringColor = chalk.green;
+  }
+  else if (requestMethod === "POST") {
+    endpointStringColor = chalk.yellow;
+  }
+  else {
+    endpointStringColor = chalk.blue;
+  }
+  const endpointString = endpointStringColor(`${req.method.toUpperCase()}: ${req.path}`);
+  logger.info(`${dateString} ${endpointString}`);
+  next();
+})
 
 // ------ Server Routes ------
 
@@ -23,7 +73,7 @@ app.post('/startGame', (req: Request, res: Response) => {
 app.get('/checkGameState/:gameId', (req: Request, res: Response) => {
   const gameId = req.params.gameId;
   // TODO.
-  res.status(StatusCodes.OK).send();
+  res.status(StatusCodes.OK).send(gameId);
 })
 
 
