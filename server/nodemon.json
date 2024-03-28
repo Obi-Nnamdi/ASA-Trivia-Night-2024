@@ -1,5 +1,5 @@
 {
-  "watch": ["/server"],
+  "watch": ["server"],
   "ext": "ts,json",
   "ignore": [],
   "exec": "tsx ./server/server.ts"
