@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
+import { strict as assert } from 'assert';
 
-// Log all requests to the server
 export function standardFormatDate(date: DateTime<boolean>): string {
     return date.toLocaleString(
         {
@@ -9,4 +9,53 @@ export function standardFormatDate(date: DateTime<boolean>): string {
             minute: '2-digit', second: '2-digit',
             timeZoneName: 'short'
         });
+}
+
+/**
+ * Generate a random choice from an array.
+ * @param arr Array to generate a random choice from. Must have length greater than 0, or an error is raised.
+ * @returns A uniformly-random choice from `arr`.
+ */
+export function randomChoice<T>(arr: Array<T>): T {
+    assert(arr.length > 0, "Array size must be greater than 0.")
+    return arr[Math.floor(Math.random() * arr.length)] ?? assert.fail();
+}
+
+/**
+ * Subtract two arrays.
+ * 
+ * @param a First array.
+ * @param b Second array.
+ * @returns Difference a - b. Equality between elements is compared objectively (i.e. with ===).
+ */
+export function arrayDifference<T>(a: readonly T[], b: readonly T[]): T[] {
+    const bSet = new Set(b);
+    return a.filter(x => !bSet.has(x));
+}
+
+/**
+ * Union two arrays.
+ * 
+ * @param a First array.
+ * @param b Second array.
+ * @returns Union between a and b. Equality between elements is compared objectively (i.e. with ===).
+ */
+export function arrayUnion<T>(a: readonly T[], b: readonly T[]): T[] {
+    return Array.from(new Set([...a, ...b]));
+}
+
+/**
+ * Intersect two arrays.
+ * 
+ * @param a First array
+ * @param b Second array.
+ * @returns Intersection between a and b. Equality between elements is compared objectively (i.e. with ===)
+ */
+export function arrayIntersection<T>(a: readonly T[], b: readonly T[]): T[] {
+    const bSet = new Set(b);
+    return a.filter(x => bSet.has(x));
+}
+
+export function generateUniqueId(): string {
+    return Math.random().toString(36).substring(7);
 }
