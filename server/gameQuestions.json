@@ -1,0 +1,112 @@
+[
+    {
+      "category": "Science",
+      "questionText": "What is the capital of France?",
+      "possibleAnswers": [
+        "London",
+        "Paris",
+        "Rome",
+        "Madrid"
+      ],
+      "answer": "Paris"
+    },
+    {
+      "category": "History",
+      "questionText": "Who was the first president of the United States?",
+      "possibleAnswers": [
+        "Abraham Lincoln",
+        "George Washington",
+        "Thomas Jefferson",
+        "John Adams"
+      ],
+      "answer": "George Washington"
+    },
+    {
+      "category": "Geography",
+      "questionText": "What is the largest ocean in the world?",
+      "possibleAnswers": [
+        "Atlantic Ocean",
+        "Pacific Ocean",
+        "Indian Ocean",
+        "Arctic Ocean"
+      ],
+      "answer": "Pacific Ocean"
+    },
+    {
+      "category": "Science",
+      "questionText": "What is the chemical symbol for gold?",
+      "possibleAnswers": [
+        "Au",
+        "Ag",
+        "Fe",
+        "Cu"
+      ],
+      "answer": "Au"
+    },
+    {
+      "category": "History",
+      "questionText": "Who was the leader of the Soviet Union during World War II?",
+      "possibleAnswers": [
+        "Joseph Stalin",
+        "Nikita Khrushchev",
+        "Leonid Brezhnev",
+        "Mikhail Gorbachev"
+      ],
+      "answer": "Joseph Stalin"
+    },
+    {
+      "category": "Geography",
+      "questionText": "What is the capital of Australia?",
+      "possibleAnswers": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
+      ],
+      "answer": "Canberra"
+    },
+    {
+      "category": "Science",
+      "questionText": "What is the largest planet in the solar system?",
+      "possibleAnswers": [
+        "Jupiter",
+        "Saturn",
+        "Uranus",
+        "Neptune"
+      ],
+      "answer": "Jupiter"
+    },
+    {
+      "category": "History",
+      "questionText": "Who was the first woman to fly solo across the Atlantic Ocean?",
+      "possibleAnswers": [
+        "Amelia Earhart",
+        "Jacqueline Cochran",
+        "Ruth Elder",
+        "Harriet Quimby"
+      ],
+      "answer": "Amelia Earhart"
+    },
+    {
+      "category": "Geography",
+      "questionText": "What is the highest mountain in the world?",
+      "possibleAnswers": [
+        "Mount Everest",
+        "K2",
+        "Kangchenjunga",
+        "Lhotse"
+      ],
+      "answer": "Mount Everest"
+    },
+    {
+      "category": "Science",
+      "questionText": "What is the name of the force that pulls objects towards each other?",
+      "possibleAnswers": [
+        "Gravity",
+        "Electromagnetism",
+        "The strong force",
+        "The weak force"
+      ],
+      "answer": "Gravity"
+    }
+]  

@@ -22,7 +22,14 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <button onClick={() => fetch('/api').then((response) => response.text()).then(setApiResponse)}>
+        <button onClick={() => fetch('/api/game/createNew', 
+        {method: "POST",
+        body: JSON.stringify({
+          "teamNames": ["Team A", "Team B"]})
+      ,
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }}).then((response) => response.text()).then(setApiResponse)}>
           API response: {apiResponse}
         </button>
         <p>

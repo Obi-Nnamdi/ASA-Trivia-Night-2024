@@ -57,5 +57,8 @@ export function arrayIntersection<T>(a: readonly T[], b: readonly T[]): T[] {
 }
 
 export function generateUniqueId(): string {
-    return Math.random().toString(36).substring(7);
+    const randomLargeNumber = Math.round(Math.random() * 100000)
+    const ranomdNumberId = randomLargeNumber.toString(16);
+    const timestampId = DateTime.now().toMillis().toString(16);
+    return `${ranomdNumberId}${timestampId}`;
 }
