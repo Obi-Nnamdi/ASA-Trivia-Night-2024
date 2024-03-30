@@ -9,7 +9,7 @@ import { generateUniqueId, standardFormatDate } from './helpers';
 import { Question, TriviaGame, TriviaGameQuestion } from './TriviaGame';
 import * as fs from 'node:fs/promises';
 import expressAsyncHandler from 'express-async-handler';
-import { checkGameStateResponse, createGameResponse, currentQuestionResponse, endGameResponse, submitAnswerResponse } from './serverTypeDefs';
+import { checkGameStateResponse, createGameResponse, currentQuestionResponse, endGameResponse, gameExistsResponse, submitAnswerResponse } from './serverTypeDefs';
 
 // ----- Server Setup ------
 const app = express();
@@ -199,6 +199,21 @@ gameRouter.post('/:gameId/endGame', (req: Request, res: Response) => {
   }
 
   const serverResponse: endGameResponse = deletionResult;
+  res.status(StatusCodes.OK).send(serverResponse);
+})
+
+/**
+ * GET (gameId) -> Boolean
+ * Takes in a gameId and returns a boolean corresponding to if it exists on the server.
+ */
+gameRouter.get('/:gameId/exists', (req: Request, res: Response) => {
+  const gameId = req.params.gameId;
+  if (gameId === undefined) {
+    res.status(StatusCodes.BAD_REQUEST).send("Game id not specified.");
+    return;
+  }
+  const gameExists = gameMap.has(gameId);
+  const serverResponse: gameExistsResponse = gameExists;
   res.status(StatusCodes.OK).send(serverResponse);
 })
 
