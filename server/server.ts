@@ -68,7 +68,7 @@ app.use('/game', gameRouter);
 
 // ----- Game Routes -----
 
-/* POST (numPlayers, teamNames) -> number.
+/* POST (teamNames) -> string.
  * Starts game with specified parameters: number of teams and team names.
  * Returns the id of the game that is being started.
  */
