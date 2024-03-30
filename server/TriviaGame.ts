@@ -227,7 +227,7 @@ export class TriviaGame {
         const questionId = this.getCurrentQuestionId()
         assert(questionId !== -1, "Chosen question does not exist in questionList (somehow).")
 
-        return { ...this.currentQuestion, id: questionId }
+        return { ...this.currentQuestion, id: questionId, assignedPlayer: this.getCurrentPlayer().getPlayerState() }
     }
 
     private getCurrentQuestionId() {
@@ -567,7 +567,7 @@ function isValidQuestion(question: Question) {
 /**
  * Interface for a Trivia Game Question, which is a question with an added id for submitting answers.
  */
-export type TriviaGameQuestion = Question & { id: number };
+export type TriviaGameQuestion = Question & { id: number, assignedPlayer: PlayerState };
 
 /**
  * Enum representing the status of a TriviaGame.
