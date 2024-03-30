@@ -287,6 +287,9 @@ export class TriviaGame {
                 this.playersAnsweringCorrectlyThisRound.push(currentPlayer)
             }
 
+            // Mark the actual question as used.
+            this.usedQuestions.add(actualQuestion)
+
             // Do a game state transition.
             this.takeGameStep()
         }
