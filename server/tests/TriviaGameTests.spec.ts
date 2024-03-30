@@ -1,5 +1,6 @@
 import { strict as assert } from 'assert';
-import { TriviaGame, Question, TriviaGameStatus, AnswerResult } from '../TriviaGame';
+import { TriviaGame } from '../TriviaGame';
+import { TriviaGameStatus, AnswerResult, Question } from '../TriviaGameTypeDefs';
 
 /**
  * Answer a game's question correctly.

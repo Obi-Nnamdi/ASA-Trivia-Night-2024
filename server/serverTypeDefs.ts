@@ -1,4 +1,4 @@
-import { AnswerResult, TriviaGameQuestion, TriviaGameState } from "./TriviaGame";
+import { AnswerResult, TriviaGameQuestion, TriviaGameState } from './TriviaGameTypeDefs';
 
 export type createGameResponse = string;
 export type checkGameStateResponse = TriviaGameState;
