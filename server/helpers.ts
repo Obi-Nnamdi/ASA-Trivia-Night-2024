@@ -1,5 +1,4 @@
 import { DateTime } from 'luxon';
-import { strict as assert } from 'assert';
 
 export function standardFormatDate(date: DateTime<boolean>): string {
     return date.toLocaleString(
@@ -17,8 +16,14 @@ export function standardFormatDate(date: DateTime<boolean>): string {
  * @returns A uniformly-random choice from `arr`.
  */
 export function randomChoice<T>(arr: Array<T>): T {
-    assert(arr.length > 0, "Array size must be greater than 0.")
-    return arr[Math.floor(Math.random() * arr.length)] ?? assert.fail();
+    if (arr.length === 0) {
+        throw new Error("Array size must be greater than 0.");
+    }
+    const randomElement = arr[Math.floor(Math.random() * arr.length)];
+    if (!randomElement) {
+        throw new Error("Random choice was undefined.");
+    }
+    return randomElement;
 }
 
 /**
