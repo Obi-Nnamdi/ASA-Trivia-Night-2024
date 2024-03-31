@@ -3,7 +3,9 @@ import { useState, useEffect } from "react"
 import { currentQuestionResponse } from "../../server/serverTypeDefs"
 import { Link, Navigate } from "react-router-dom"
 import { STANDINGS_PAGE_ROUTE_NAME } from "./pageRouteNames"
-import { randomChoice } from "../../server/helpers"
+import QuestionTextDisplay from "../components/QuestionTextDisplay"
+import QuestionCategoryDisplay from "../components/QuestionCategoryDisplay"
+import QuestionChoicesDisplay from "../components/QuestionChoicesDisplay"
 
 // Page for answering a game's current question.
 // Props:
@@ -31,19 +33,11 @@ function QuestionAnswerPage({ gameId }: Props) {
         return <Navigate to="/" />
     }
 
-    // If the game state is undefined, display a loading message.
-    if (currentQuestion === undefined) {
-        return <div>Loading...</div>
-    }
-
     // Define function for randomly answering the current question
-    function randomlyAnswerQuestion() {
+    function answerQuestion(answer: string) {
         if (currentQuestion !== undefined) {
-            const randomAnswerChoice = randomChoice(
-                currentQuestion.possibleAnswers
-            )
             axios.post(`/api/game/${gameId}/submitAnswer`, {
-                answer: randomAnswerChoice,
+                answer: answer,
                 questionId: currentQuestion.id,
             })
         }
@@ -51,12 +45,22 @@ function QuestionAnswerPage({ gameId }: Props) {
     // Display the current game question.
     return (
         <div>
-            <pre>
-                Current question: {JSON.stringify(currentQuestion, null, 2)}
-            </pre>
-
-            <button onClick={randomlyAnswerQuestion}>Answer randomly.</button>
-            <Link to={STANDINGS_PAGE_ROUTE_NAME}>Next.</Link>
+            {currentQuestion !== undefined && (
+                <>
+                    <QuestionCategoryDisplay
+                        category={currentQuestion.category}
+                        player={currentQuestion.assignedPlayer.name}
+                    />
+                    <QuestionTextDisplay
+                        questionText={currentQuestion.questionText}
+                    />
+                    <QuestionChoicesDisplay
+                        answerChoices={currentQuestion.possibleAnswers}
+                        submitAnswer={answerQuestion}
+                    />
+                    <Link to={STANDINGS_PAGE_ROUTE_NAME}>Next.</Link>{" "}
+                </>
+            )}
         </div>
     )
 }
