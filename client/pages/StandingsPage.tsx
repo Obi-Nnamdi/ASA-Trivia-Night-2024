@@ -7,6 +7,7 @@ import {
     QUESTION_REVEAL_PAGE_ROUTE_NAME,
 } from "./pageRouteNames"
 import { TriviaGameStatus } from "../../server/TriviaGameTypeDefs"
+import TeamStandingsDisplay from "../components/TeamStandingsDisplay"
 
 // Page for displaying the current standings of a game.
 // Props:
@@ -38,10 +39,20 @@ function StandingsPage({ gameId }: Props) {
         return <div>Loading...</div>
     }
 
-    // Display the current game state, and add a button to navigate to the question reveal page.
+    // Display the current game state, and add a button to navigate to the question reveal page (or winner page if the game is over).
     return (
         <>
-            <pre>Current game state: {JSON.stringify(gameState, null, 2)}</pre>
+            <h1>Standings</h1>
+            <ul>
+                {gameState.playerStates.map((playerState, index) => (
+                    <TeamStandingsDisplay
+                        key={index}
+                        player={playerState}
+                        allQuestionCategories={gameState.questionCategories}
+                        currentPlayer={index === gameState.currentPlayerIndex}
+                    />
+                ))}
+            </ul>
             {gameState.gameStatus === TriviaGameStatus.IN_PROGRESS ? (
                 <Link to={".." + QUESTION_REVEAL_PAGE_ROUTE_NAME}>
                     Navigate to question reveal page.
