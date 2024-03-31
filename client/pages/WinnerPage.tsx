@@ -46,7 +46,8 @@ function WinnerPage({ gameId }: Props) {
     // TODO: end game.
     return (
         <>
-            <pre>Winner: {JSON.stringify(gameState.winner, null, 2)}</pre>
+            <h1>Winner</h1>
+            <h2>{gameState.winner.name}</h2>
             <Link to={".." + LANDING_PAGE_ROUTE_NAME}>Back to Home Page.</Link>
         </>
     )
