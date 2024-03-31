@@ -132,6 +132,7 @@ export class TriviaGame {
      * 
      * @param category category of questions to refresh.
      */
+    // @ts-expect-error: Unused Function.
     private refreshQuestionCategory(category: string) {
         const questionsToRemove = this.getAllGameQuestionsByCategory(category)
         questionsToRemove.forEach(question => this.usedQuestions.delete(question))
@@ -468,6 +469,7 @@ class Player {
      * 
      * @param categoryName category name.
      */
+    // @ts-expect-error: Unused Function.
     private incompleteCategory(categoryName: string) {
         this.categoryCompletionMap.set(categoryName, false);
     }

@@ -7,7 +7,6 @@ import {
     QUESTION_REVEAL_PAGE_ROUTE_NAME,
 } from "./pageRouteNames"
 import { TriviaGameStatus } from "../../server/TriviaGameTypeDefs"
-import WinnerPage from "./WinnerPage"
 
 // Page for displaying the current standings of a game.
 // Props:

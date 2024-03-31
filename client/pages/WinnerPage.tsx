@@ -2,7 +2,10 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import { checkGameStateResponse } from "../../server/serverTypeDefs"
 import { Link, Navigate } from "react-router-dom"
-import { LANDING_PAGE_ROUTE_NAME } from "./pageRouteNames"
+import {
+    LANDING_PAGE_ROUTE_NAME,
+    STANDINGS_PAGE_ROUTE_NAME,
+} from "./pageRouteNames"
 
 // Page for displaying the winner of a game.
 // Props:
@@ -26,12 +29,17 @@ function WinnerPage({ gameId }: Props) {
 
     // If the game id is undefined, redirect to the home page.
     if (gameId === undefined) {
-        return <Navigate to="/" />
+        return <Navigate to={".." + LANDING_PAGE_ROUTE_NAME} />
     }
 
     // If the game state is undefined, display a loading message.
     if (gameState === undefined) {
         return <div>Loading...</div>
+    }
+
+    // If the game hasn't been won, redirect back to the standings page.
+    if (gameState.winner === undefined) {
+        return <Navigate to={".." + STANDINGS_PAGE_ROUTE_NAME} />
     }
 
     // Display the current game winner, and add a button to navigate to the landing page.
