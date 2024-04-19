@@ -1,0 +1,92 @@
+/* Import fonts */
+@font-face {
+    font-family: Burowai;
+    src: url("assets/fonts/burowai/BurowaiRegular-3zVjX.ttf");
+    src: url("assets/fonts/burowai/BurowaiRegular-ZVxZq.otf");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Gilgongo;
+    src: url("assets/fonts/gilgongo/Gilgongo True Type/GILGON__.ttf");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Gilgongo Doro';
+    src: url("assets/fonts/gilgongo/Gilgongo True Type/GILGOND_.ttf");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Gilgongo Sledge';
+    src: url("assets/fonts/gilgongo/Gilgongo True Type/GILGONS_.ttf");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Rimba Andalas';
+    src: url("assets/fonts/rimba-andalas/Rimba Andalas.ttf");
+    src: url("assets/fonts/rimba-andalas/Rimba Andalas.otf");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Naluka';
+    src: url("assets/fonts/naluka/Naluka.ttf");
+    src: url("assets/fonts/naluka/Naluka.otf");
+    font-display: fallback;
+}
+
+/* Define global variables */
+:root {
+    --primary-font: Naluka;
+    --secondary-font: Gilgongo;
+    --accent-font: Burowai;
+    --secondary-accent-font: Gilgongo Sledge;
+    --tertiary-accent-font: Gilgongo Doro;
+    --primary-color: #ffffff;
+    --dimmed-primary-color: rgba(255, 255, 255, 0.4);
+    --standard-border-radius: 10px;
+
+    --yellow-kente-gradient: linear-gradient(180deg, #FDF307 0.16%, rgba(176, 46, 255, 1.00) 270.61%), url("assets/images/Kente-Pattern-Grayscale-upscaled.png") lightgray 50% / cover no-repeat;
+}
+
+/* Define Global Properties */
+:root {
+    color: var(--primary-color);
+    background: #000;
+}
+
+/* Define Utility Classes */
+.u-no-margin {
+    margin: 0
+}
+
+.u-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.u-hide-overflow {
+    overflow: hidden;
+}
+
+.u-max-height {
+    height: 100vh
+}
+
+/* Define Global Classes */
+.importantButton {
+    filter: brightness(150%);
+    border-radius: var(--standard-border-radius);
+    background: var(--yellow-kente-gradient);
+    background-blend-mode: overlay, normal;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 13px 13px 9.5px -4px rgba(0, 0, 0, 0.25);
+}
+.page-main-title {
+    font-family: var(--primary-font);
+
+}

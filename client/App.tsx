@@ -14,6 +14,7 @@ import {
 } from "./pages/pageRouteNames"
 import QuestionAnswerPage from "./pages/QuestionAnswerPage"
 import WinnerPage from "./pages/WinnerPage"
+import "./utilities.css"
 
 const gameIdKey = "gameId"
 function App() {

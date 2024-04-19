@@ -1,0 +1,66 @@
+:root {
+    --sidebar-float-left: 11vw;
+    --sidebar-float-top: 11vw;
+    --sideline-float-left: 144px;
+}
+
+.LandingPage-leftIndent {
+    /* TODO: Could potentially refactor to actually use a vertical line svg file to get round end caps for the vertical line. */
+    margin-left: var(--sidebar-float-left);
+    margin-top: var(--sidebar-float-top);
+    height: 60vh;
+
+    border-left: 2px solid var(--dimmed-primary-color);
+    padding-left: 50px
+}
+
+#LandingPage-mainContainer {
+    /* Crops the main page content to prevent scrolling */
+    position: relative;
+
+    /* Set background */
+    /* background: url("../assets/images/Texturelabs_LensFX_174L.jpg") lightgray 50% / cover no-repeat; */
+    background: url("../assets/images/LensFX174.png") rgb(0, 0, 0) 50% / cover no-repeat;
+    background-blend-mode: exclusion;
+}
+
+#LandingPage-title {
+    font-family: var(--accent-font);
+    font-size: 10.625rem;
+    font-weight: normal;
+}
+
+#LandingPage-subtitle {
+    font-family: 'Gilgongo Sledge';
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#LandingPage-startButton {
+    font-family: 'Rimba Andalas';
+    font-size: 3.8125rem;
+    vertical-align: middle;
+
+    margin-top: auto;
+    width: 235px;
+    height: 111px;
+    z-index: 2;
+}
+
+#LandingPage-startButtonText {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    text-align: center;
+
+    /* Move text up slightly to fix centering problems */
+    position: relative;
+    bottom: -.5rem
+}
+
+#LandingPage-AfricaMap {
+    position: absolute;
+    right: -275px;
+    bottom: -450px;
+    transform: rotate(25.175deg);
+    z-index: 1;
+}
