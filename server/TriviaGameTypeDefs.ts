@@ -8,10 +8,11 @@ export type Question = {
     questionText: string;
     possibleAnswers: string[];
     answer: string;
-};/**
+};
+
+/**
  * Interface for a Trivia Game Question, which is a question with an added id for submitting answers.
  */
-
 export type TriviaGameQuestion = Question & { id: number; assignedPlayer: PlayerState; };
 /**
  * Enum representing the status of a TriviaGame.
