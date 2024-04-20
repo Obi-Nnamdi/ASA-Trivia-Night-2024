@@ -1,7 +1,4 @@
-#GameCreation-mainContainer {
-    height: 100vh;
-    align-items: center;
-}
+/* #GameCreation-mainContainer {} */
 
 #GameCreation-addTeamButton {
     font-family: var(--primary-font);
@@ -27,7 +24,7 @@
     width: 23.1%;
     height: 11%;
     margin-top: auto;
-    margin-bottom: 5%;
+    margin-bottom: var(--important-button-bottom-margin);
 }
 
 #GameCreation-beginButton>p {

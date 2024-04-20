@@ -1,0 +1,40 @@
+.StandingsPage-teamDisplay {
+    font-family: Naluka;
+    font-size: var(--main-font-size);
+    width: 17rem;
+    text-align: center;
+    border-bottom: .5rem solid white;
+    margin: none;
+    margin-bottom: 2rem;
+}
+
+.StandingsPage-indicatorTriangle {
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.StandingsPage-teamStandingsContainer {
+    align-items: end;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.StandingsPage-categoryIcon {
+    height: 4.5rem;
+    background: white;
+    margin-top: 1rem;
+}
+
+.StandingsPage-categoryIcon:nth-child(1) {
+    margin-top: 0;
+}
+
+.StandingsPage-nextPageButton {
+    /* Note: just from observation, the font's bottom seems to have built-in padding of font-size/4.*/
+    padding-top: calc(var(--button-font-size) / 4);
+    padding-bottom: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: auto;
+    margin-bottom: var(--important-button-bottom-margin);
+}

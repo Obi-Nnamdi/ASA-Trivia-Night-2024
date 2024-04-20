@@ -8,6 +8,7 @@ import {
 } from "./pageRouteNames"
 import { TriviaGameStatus } from "../../server/TriviaGameTypeDefs"
 import TeamStandingsDisplay from "../components/TeamStandingsDisplay"
+import "./StandingsPage.css"
 
 // Page for displaying the current standings of a game.
 // Props:
@@ -41,9 +42,9 @@ function StandingsPage({ gameId }: Props) {
 
     // Display the current game state, and add a button to navigate to the question reveal page (or winner page if the game is over).
     return (
-        <>
-            <h1>Standings</h1>
-            <ul>
+        <div className="u-flex-column main-page-centered-container">
+            <h1 className="page-main-title">Standings</h1>
+            <div className="u-flex-row StandingsPage-teamStandingsContainer">
                 {gameState.playerStates.map((playerState, index) => (
                     <TeamStandingsDisplay
                         key={index}
@@ -52,17 +53,23 @@ function StandingsPage({ gameId }: Props) {
                         currentPlayer={index === gameState.currentPlayerIndex}
                     />
                 ))}
-            </ul>
+            </div>
             {gameState.gameStatus === TriviaGameStatus.IN_PROGRESS ? (
-                <Link to={".." + QUESTION_REVEAL_PAGE_ROUTE_NAME}>
-                    Navigate to question reveal page.
+                <Link
+                    className="importantButton u-remove-underline StandingsPage-nextPageButton"
+                    to={".." + QUESTION_REVEAL_PAGE_ROUTE_NAME}
+                >
+                    Next Question
                 </Link>
             ) : (
-                <Link to={".." + GAME_WINNER_PAGE_ROUTE_NAME}>
-                    Navigate to winner page.
+                <Link
+                    className="importantButton u-remove-underline StandingsPage-nextPageButton"
+                    to={".." + GAME_WINNER_PAGE_ROUTE_NAME}
+                >
+                    Results
                 </Link>
             )}
-        </>
+        </div>
     )
 }
 

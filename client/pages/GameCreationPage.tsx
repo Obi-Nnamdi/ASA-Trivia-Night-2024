@@ -81,7 +81,10 @@ function GameCreationPage({ setGameId }: Props) {
     }
 
     return (
-        <div className="u-flex-column" id="GameCreation-mainContainer">
+        <div
+            className="u-flex-column main-page-centered-container"
+            id="GameCreation-mainContainer"
+        >
             <h2 className="page-main-title">Team Creation</h2>
             {teamCreationSlots.map((slot, index) => (
                 <TeamCreationSlot

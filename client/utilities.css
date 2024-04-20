@@ -59,6 +59,7 @@
     --button-font-size: 3.5rem;
     --large-font-size: 5rem;
     --small-font-size: 2.25rem;
+    --important-button-bottom-margin: 5%;
 }
 
 /* Define Global Properties */
@@ -77,6 +78,15 @@
     flex-direction: column;
 }
 
+.u-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.u-align-center {
+    align-items: center;
+}
+
 .u-hide-overflow {
     overflow: hidden;
 }
@@ -87,6 +97,10 @@
 
 .u-pointer-cursor {
     cursor: pointer;
+}
+
+.u-remove-underline {
+    text-decoration: none;
 }
 
 /* Define Global Classes */
@@ -113,6 +127,12 @@
     text-align: center;
 
     margin-top: 5.7vh;
+    margin-bottom: 2.5vh;
+}
+
+.main-page-centered-container {
+    height: 100vh;
+    align-items: center;
 }
 
 body {
