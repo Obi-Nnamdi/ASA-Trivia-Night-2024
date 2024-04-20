@@ -13,26 +13,26 @@
 }
 
 @font-face {
-    font-family: 'Gilgongo Doro';
+    font-family: "Gilgongo Doro";
     src: url("assets/fonts/gilgongo/Gilgongo True Type/GILGOND_.ttf");
     font-display: fallback;
 }
 
 @font-face {
-    font-family: 'Gilgongo Sledge';
+    font-family: "Gilgongo Sledge";
     src: url("assets/fonts/gilgongo/Gilgongo True Type/GILGONS_.ttf");
     font-display: fallback;
 }
 
 @font-face {
-    font-family: 'Rimba Andalas';
+    font-family: "Rimba Andalas";
     src: url("assets/fonts/rimba-andalas/Rimba Andalas.ttf");
     src: url("assets/fonts/rimba-andalas/Rimba Andalas.otf");
     font-display: fallback;
 }
 
 @font-face {
-    font-family: 'Naluka';
+    font-family: "Naluka";
     src: url("assets/fonts/naluka/Naluka.ttf");
     src: url("assets/fonts/naluka/Naluka.otf");
     font-display: fallback;
@@ -49,7 +49,16 @@
     --dimmed-primary-color: rgba(255, 255, 255, 0.4);
     --standard-border-radius: 10px;
 
-    --yellow-kente-gradient: linear-gradient(180deg, #FDF307 0.16%, rgba(176, 46, 255, 1.00) 270.61%), url("assets/images/Kente-Pattern-Grayscale-upscaled.png") lightgray 50% / cover no-repeat;
+    --yellow-kente-gradient: linear-gradient(180deg,
+            #fdf307 0.16%,
+            rgba(176, 46, 255, 1) 270.61%),
+        url("assets/images/Kente-Pattern-Grayscale-upscaled.png") lightgray 50% / cover no-repeat;
+
+    --page-title-font-size: 4.6875rem;
+    --main-font-size: 3.5rem;
+    --button-font-size: 3.5rem;
+    --large-font-size: 5rem;
+    --small-font-size: 2.25rem;
 }
 
 /* Define Global Properties */
@@ -60,7 +69,7 @@
 
 /* Define Utility Classes */
 .u-no-margin {
-    margin: 0
+    margin: 0;
 }
 
 .u-flex-column {
@@ -73,7 +82,11 @@
 }
 
 .u-max-height {
-    height: 100vh
+    height: 100vh;
+}
+
+.u-pointer-cursor {
+    cursor: pointer;
 }
 
 /* Define Global Classes */
@@ -85,8 +98,23 @@
     border: 0;
     cursor: pointer;
     box-shadow: 13px 13px 9.5px -4px rgba(0, 0, 0, 0.25);
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: 400;
+
+    font-size: var(--button-font-size);
 }
+
 .page-main-title {
     font-family: var(--primary-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: var(--page-title-font-size);
+    text-align: center;
 
+    margin-top: 5.7vh;
+}
+
+body {
+    margin: 0;
 }

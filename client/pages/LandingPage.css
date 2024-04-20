@@ -48,7 +48,6 @@
 }
 
 #LandingPage-startButtonText {
-    color: var(--primary-color);
     text-transform: capitalize;
     text-align: center;
 

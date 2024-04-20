@@ -13,16 +13,22 @@ function TeamCreationSlot({
     deleteTeamSlot,
 }: Props) {
     return (
-        <>
-            <button onClick={() => deleteTeamSlot(id)}>X</button>
-            <label htmlFor={id}>Team {index + 1}</label>
+        <span className="TeamCreationSlot-mainContainer">
+            <button
+                className="u-pointer-cursor"
+                onClick={() => deleteTeamSlot(id)}
+            >
+                Remove
+            </button>
+            <label htmlFor={id}>{index + 1}</label>
+            <div className="TeamCreationSlot-dividingLine"></div>
             <input
                 type="text"
                 id={id}
                 placeholder={`Team ${index + 1}`}
                 onChange={(e) => changeTeamSlotName(id, e.target.value)}
             />
-        </>
+        </span>
     )
 }
 

@@ -1,0 +1,105 @@
+#GameCreation-mainContainer {
+    height: 100vh;
+    align-items: center;
+}
+
+#GameCreation-addTeamButton {
+    font-family: var(--primary-font);
+    border: none;
+    color: var(--primary-color);
+    font-size: var(--main-font-size);
+    border-radius: var(--standard-border-radius);
+    margin-top: 1rem;
+    opacity: .2;
+
+    padding: calc(var(--main-font-size) / 4);
+    padding-bottom: 0;
+    background: none;
+    transition: opacity 200ms, background 200ms;
+}
+
+#GameCreation-addTeamButton:hover {
+    opacity: .4;
+    background: rgba(175, 175, 175, 0.40);
+}
+
+#GameCreation-beginButton {
+    width: 23.1%;
+    height: 11%;
+    margin-top: auto;
+    margin-bottom: 5%;
+}
+
+#GameCreation-beginButton>p {
+    position: relative;
+    bottom: -.2rem;
+}
+
+.TeamCreationSlot-mainContainer {
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+}
+
+.TeamCreationSlot-mainContainer>input {
+    /* Remove all the default styling... */
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+
+    /* ...And add our own. */
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: var(--main-font-size);
+
+    background: rgba(175, 175, 175, 0.10);
+    padding-bottom: 5px;
+    padding-top: calc(var(--main-font-size) / 4 + 5px);
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: var(--standard-border-radius);
+    width: 100%;
+
+    margin-left: calc(62px - 1rem);
+}
+
+.TeamCreationSlot-mainContainer>label {
+    font-size: var(--large-font-size);
+    position: relative;
+    bottom: -1.5rem;
+    width: 1rem;
+
+    margin-right: 62px;
+}
+
+.TeamCreationSlot-mainContainer>button {
+    font-family: var(--primary-font);
+    font-weight: normal;
+
+    padding-bottom: 10px;
+    padding-top: calc(var(--small-font-size) / 4 + 10px);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: var(--small-font-size);
+    border-radius: var(--standard-border-radius);
+    color: var(--primary-color);
+
+    opacity: 0.10;
+    background: #AFAFAF;
+    border: none;
+
+    margin-right: 3%;
+}
+
+.TeamCreationSlot-mainContainer>button:hover {
+    opacity: 0.40;
+    transition: opacity 200ms;
+}
+
+.TeamCreationSlot-dividingLine {
+    height: 100%;
+    border-right: 10px solid white;
+}
