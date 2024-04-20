@@ -1,0 +1,617 @@
+[
+  {
+    "category": "Sports",
+    "questionText": "Which African country won the first-ever FIFA World Cup match for the continent?",
+    "possibleAnswers": ["Nigeria", "Cameroon", "Egypt", "South Africa"],
+    "answer": "Cameroon"
+  },
+  {
+    "category": "Sports",
+    "questionText": "What is the traditional Ethiopian sport often described as a mix between hockey and soccer?",
+    "possibleAnswers": ["Bandy", "Sepak Takraw", "Hurling", "Genna"],
+    "answer": "Genna"
+  },
+  {
+    "category": "Sports",
+    "questionText": "Which African country has won the most Olympic medals in athletics?",
+    "possibleAnswers": ["Kenya", "Ethiopia", "Nigeria", "South Africa"],
+    "answer": "Kenya"
+  },
+  {
+    "category": "Sports",
+    "questionText": "Which African city hosted the first-ever FIFA World Cup on the continent in 2010?",
+    "possibleAnswers": [
+      "Cairo, Egypt",
+      "Cape Town, South Africa",
+      "Lagos, Nigeria",
+      "Johannesburg, South Africa"
+    ],
+    "answer": "Johannesburg, South Africa"
+  },
+  {
+    "category": "Sports",
+    "questionText": "In which sport did Algerian athlete Noureddine Morceli excel, setting multiple world records?",
+    "possibleAnswers": [
+      "Long-distance running",
+      "Swimming",
+      "High jump",
+      "Middle-distance running"
+    ],
+    "answer": "Middle-distance running"
+  },
+  {
+    "category": "Sports",
+    "questionText": "Which African country won the Africa Cup of Nations (AFCON) in 2019?",
+    "possibleAnswers": ["Egypt", "Nigeria", "Algeria", "Cameroon"],
+    "answer": "Algeria"
+  },
+  {
+    "category": "Sports",
+    "questionText": "What sport is the Senegalese national team known for dominating internationally?",
+    "possibleAnswers": ["Basketball", "Rugby", "Wrestling", "Tennis"],
+    "answer": "Wrestling"
+  },
+  {
+    "category": "Sports",
+    "questionText": "Which South African golfer won the 2019 Masters Tournament, becoming the first from his country to do so?",
+    "possibleAnswers": [
+      "Ernie Els",
+      "Charl Schwartzel",
+      "Louis Oosthuizen",
+      "Trevor Immelman"
+    ],
+    "answer": "Charl Schwartzel"
+  },
+  {
+    "category": "Sports",
+    "questionText": "In which year did Morocco become the first African country to host the African Cup of Nations (AFCON)?",
+    "possibleAnswers": ["1982", "1986", "1990", "1994"],
+    "answer": "1990"
+  },
+  {
+    "category": "Sports",
+    "questionText": "What is the name of the African-American sprinter who won four gold medals at the 1936 Berlin Olympics?",
+    "possibleAnswers": [
+      "Jesse Owens",
+      "Carl Lewis",
+      "Usain Bolt",
+      "Michael Johnson"
+    ],
+    "answer": "Jesse Owens"
+  },
+  {
+    "category": "Sports",
+    "questionText": "Which African country is known for its dominance in the sport of rugby union, particularly the Sevens format?",
+    "possibleAnswers": ["Kenya", "South Africa", "Namibia", "Zimbabwe"],
+    "answer": "Kenya"
+  },
+  {
+    "category": "Sports",
+    "questionText": "Who is the most decorated Olympic athlete from Africa, having won a total of 10 medals?",
+    "possibleAnswers": [
+      "Hicham El Guerrouj",
+      "Haile Gebrselassie",
+      "Wilson Kipketer",
+      "Ezekiel Kemboi"
+    ],
+    "answer": "Haile Gebrselassie"
+  },
+  {
+    "category": "Sports",
+    "questionText": "Which African country was the first to qualify for a FIFA World Cup, achieving this feat in 1934?",
+    "possibleAnswers": ["Egypt", "Ghana", "South Africa", "Cameroon"],
+    "answer": "Cameroon"
+  },
+  {
+    "category": "Sports",
+    "questionText": "What is the traditional stick-fighting sport practiced by the Zulu people of South Africa?",
+    "possibleAnswers": [
+      "Taekwondo",
+      "Krav Maga",
+      "Capoeira",
+      "Nguni Stick Fighting"
+    ],
+    "answer": "Nguni Stick Fighting"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "Which Nigerian musician is known as the \"African Giant\" and won the Grammy Award for Best Global Music Album in 2021?",
+    "possibleAnswers": ["Wizkid", "Burna Boy", "Davido", "Tiwa Savage"],
+    "answer": "Burna Boy"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "What is the title of the popular South African soap opera that has been on air since 1994 and is set in the fictional Johannesburg suburb of Hillside?",
+    "possibleAnswers": ["Generations", "Isibaya", "Scandal!", "Rhythm City"],
+    "answer": "Generations"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "Who is the South African comedian and host of \"The Daily Show\" on Comedy Central, known for his humorous take on current events and politics?",
+    "possibleAnswers": [
+      "Trevor Noah",
+      "Loyiso Gola",
+      "Kagiso Lediga",
+      "Marc Lottering"
+    ],
+    "answer": "Trevor Noah"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "What is the name of the Nigerian actress who starred in the hit movie \"Lionheart\" and became the first Nigerian to win an Oscar nomination in an acting category?",
+    "possibleAnswers": [
+      "Genevieve Nnaji",
+      "Omotola Jalade-Ekeinde",
+      "Rita Dominic",
+      "Mercy Johnson"
+    ],
+    "answer": "Genevieve Nnaji"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "Which Kenyan author wrote the critically acclaimed novel \"A Grain of Wheat\" and won the Nobel Prize in Literature in 1986?",
+    "possibleAnswers": [
+      "Ngũgĩ wa Thiong'o",
+      "Chimamanda Ngozi Adichie",
+      "Binyavanga Wainaina",
+      "Yvonne Adhiambo Owuor"
+    ],
+    "answer": "Ngũgĩ wa Thiong'o"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "In which African country was the movie \"District 9\" primarily filmed, depicting a fictional extraterrestrial refugee camp?",
+    "possibleAnswers": ["Nigeria", "South Africa", "Kenya", "Ghana"],
+    "answer": "South Africa"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "What is the name of the annual music festival held in the Moroccan desert, attracting artists and attendees from around the world?",
+    "possibleAnswers": [
+      "Coachella",
+      "Glastonbury",
+      "Burning Man",
+      "Festival au Désert (Festival in the Desert)"
+    ],
+    "answer": "Festival au Désert (Festival in the Desert)"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "Who is the Egyptian actor known for his role as Sheikh Amar in the film \"The Mummy Returns\" and as Jafar in Disney's live-action adaptation of \"Aladdin\"?",
+    "possibleAnswers": [
+      "Amr Waked",
+      "Omar Sharif",
+      "Ahmed Helmy",
+      "Marwan Kenzari"
+    ],
+    "answer": "Marwan Kenzari"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "Which South African band gained international recognition with their song \"Pompeii\" and their debut album \"Bad Blood\"?",
+    "possibleAnswers": [
+      "Die Antwoord",
+      "The Parlotones",
+      "Goldfish",
+      "Bastille"
+    ],
+    "answer": "Bastille"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "What is the name of the Ghanaian-American actress who starred in the award-winning film \"Beasts of No Nation\" and the TV series \"True Detective\"?",
+    "possibleAnswers": [
+      "Lupita Nyong'o",
+      "Danai Gurira",
+      "Yvonne Nelson",
+      "Elsie Fisher"
+    ],
+    "answer": "Lupita Nyong'o"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "In which African country was the popular TV series \"Money Heist\" (La Casa de Papel) partly filmed for its fourth season?",
+    "possibleAnswers": ["Morocco", "Kenya", "Tunisia", "Nigeria"],
+    "answer": "Morocco"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "Which Nigerian artist released the hit song \"Ye\" in 2018, which became a viral sensation and one of the most streamed African songs?",
+    "possibleAnswers": ["Wizkid", "Burna Boy", "Davido", "Olamide"],
+    "answer": "Burna Boy"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "Who is the Ghanaian-British actor known for his roles in \"Luther,\" \"Pacific Rim,\" and \"Mandela: Long Walk to Freedom\"?",
+    "possibleAnswers": [
+      "Idris Elba",
+      "John Boyega",
+      "Chiwetel Ejiofor",
+      "David Oyelowo"
+    ],
+    "answer": "Idris Elba"
+  },
+  {
+    "category": "Entertainment",
+    "questionText": "What is the name of the Nigerian filmmaker known for his movies \"The Wedding Party\" and \"The CEO,\" which have gained international acclaim?",
+    "possibleAnswers": [
+      "Kunle Afolayan",
+      "Tunde Kelani",
+      "Nollywood",
+      "Kemi Adetiba"
+    ],
+    "answer": "Kemi Adetiba"
+  },
+  {
+    "category": "History",
+    "questionText": "Who was the first President of independent Ghana?",
+    "possibleAnswers": [
+      "Nelson Mandela",
+      "Jomo Kenyatta",
+      "Kwame Nkrumah",
+      "Julius Nyerere"
+    ],
+    "answer": "Kwame Nkrumah"
+  },
+  {
+    "category": "History",
+    "questionText": "Which ancient civilization built the pyramids of Giza?",
+    "possibleAnswers": ["Egyptian", "Nubian", "Assyrian", "Sumerian"],
+    "answer": "Egyptian"
+  },
+  {
+    "category": "History",
+    "questionText": "What was the name of the South African anti-apartheid leader who became the country's first black president in 1994?",
+    "possibleAnswers": [
+      "Nelson Mandela",
+      "Desmond Tutu",
+      "Thabo Mbeki",
+      "Jacob Zuma"
+    ],
+    "answer": "Nelson Mandela"
+  },
+  {
+    "category": "History",
+    "questionText": "Who was the Libyan leader overthrown during the Arab Spring uprising in 2011?",
+    "possibleAnswers": [
+      "Hosni Mubarak",
+      "Muammar Gaddafi",
+      "Bashar al-Assad",
+      "King Abdullah II"
+    ],
+    "answer": "Muammar Gaddafi"
+  },
+  {
+    "category": "History",
+    "questionText": "Which ancient civilization is known for its impressive terracotta army discovered in the tomb of Emperor Qin Shi Huang?",
+    "possibleAnswers": ["Mesopotamian", "Persian", "Chinese", "Mesoamerican"],
+    "answer": "Chinese"
+  },
+  {
+    "category": "History",
+    "questionText": "What was the name of the kingdom that emerged in present-day Zimbabwe in the 11th century and became known for its impressive stone structures?",
+    "possibleAnswers": [
+      "Kingdom of Aksum",
+      "Kingdom of Kush",
+      "Kingdom of Mali",
+      "Kingdom of Great Zimbabwe"
+    ],
+    "answer": "Kingdom of Great Zimbabwe"
+  },
+  {
+    "category": "History",
+    "questionText": "Which event is often considered the start of World War I in Africa, involving clashes between British and German colonial forces in 1914?",
+    "possibleAnswers": [
+      "Battle of Trafalgar",
+      "Battle of Adwa",
+      "Battle of Omdurman",
+      "Battle of Tanga"
+    ],
+    "answer": "Battle of Tanga"
+  },
+  {
+    "category": "History",
+    "questionText": "Who was the first female president in Africa, serving as the President of Liberia from 2006 to 2018?",
+    "possibleAnswers": [
+      "Ellen Johnson Sirleaf",
+      "Joyce Banda",
+      "Ameenah Gurib",
+      "Sahle-Work Zewde"
+    ],
+    "answer": "Ellen Johnson Sirleaf"
+  },
+  {
+    "category": "History",
+    "questionText": "What was the name of the kingdom located in present-day Ethiopia that emerged around the 1st century CE and converted to Christianity in the 4th century CE?",
+    "possibleAnswers": [
+      "Kingdom of Ghana",
+      "Kingdom of Aksum",
+      "Kingdom of Mali",
+      "Kingdom of Kush"
+    ],
+    "answer": "Kingdom of Aksum"
+  },
+  {
+    "category": "History",
+    "questionText": "Which African leader famously declared, \"I am the state,\" and ruled the Democratic Republic of the Congo (then Zaire) from 1965 to 1997?",
+    "possibleAnswers": [
+      "Idi Amin",
+      "Mobutu Sese Seko",
+      "Haile Selassie",
+      "Robert Mugabe"
+    ],
+    "answer": "Mobutu Sese Seko"
+  },
+  {
+    "category": "History",
+    "questionText": "What was the name of the famous West African trading empire that reached its peak in the 14th century?",
+    "possibleAnswers": [
+      "Mali Empire",
+      "Songhai Empire",
+      "Axumite Empire",
+      "Kingdom of Benin"
+    ],
+    "answer": "Mali Empire"
+  },
+  {
+    "category": "History",
+    "questionText": "Who was the Portuguese explorer credited with being the first European to reach the southern tip of Africa, which he named the Cape of Good Hope?",
+    "possibleAnswers": [
+      "Vasco da Gama",
+      "Ferdinand Magellan",
+      "Bartolomeu Dias",
+      "Christopher Columbus"
+    ],
+    "answer": "Bartolomeu Dias"
+  },
+  {
+    "category": "History",
+    "questionText": "Which North African city was a center of learning and trade during the Middle Ages, known for its famous university and libraries?",
+    "possibleAnswers": ["Timbuktu", "Alexandria", "Fez", "Marrakech"],
+    "answer": "Timbuktu"
+  },
+  {
+    "category": "History",
+    "questionText": "Who was the Ethiopian emperor who successfully resisted Italian colonization attempts in the late 19th and early 20th centuries, famously winning the Battle of Adwa in 1896?",
+    "possibleAnswers": [
+      "Menelik II",
+      "Haile Selassie",
+      "Tewodros II",
+      "Yohannes IV"
+    ],
+    "answer": "Menelik II"
+  },
+  {
+    "category": "Government",
+    "questionText": "What is the official language of government and business in most African countries due to colonial history?",
+    "possibleAnswers": ["English", "French", "Portuguese", "Arabic"],
+    "answer": "English"
+  },
+  {
+    "category": "Government",
+    "questionText": "Which African country has the oldest parliament in Africa, dating back to the 13th century?",
+    "possibleAnswers": ["South Africa", "Ethiopia", "Nigeria", "Ghana"],
+    "answer": "Ethiopia"
+  },
+  {
+    "category": "Government",
+    "questionText": "What is the name of the legislative body in South Africa that consists of the National Assembly and the National Council of Provinces?",
+    "possibleAnswers": [
+      "Parliament",
+      "Congress",
+      "National Assembly",
+      "Senate"
+    ],
+    "answer": "Parliament"
+  },
+  {
+    "category": "Government",
+    "questionText": "Which African country is known for its system of tribal councils, known as \"kgotlas,\" which play a role in local governance?",
+    "possibleAnswers": ["Botswana", "Kenya", "Zambia", "Tanzania"],
+    "answer": "Botswana"
+  },
+  {
+    "category": "Government",
+    "questionText": "What is the term for the system of apartheid-era laws that enforced racial segregation in South Africa from 1948 to the early 1990s?",
+    "possibleAnswers": [
+      "Segregation Act",
+      "Racial Code",
+      "Group Areas Act",
+      "Apartheid Laws"
+    ],
+    "answer": "Apartheid Laws"
+  },
+  {
+    "category": "Government",
+    "questionText": "Which African country has a federal system of government with 36 states and a Federal Capital Territory?",
+    "possibleAnswers": ["Nigeria", "Kenya", "Egypt", "Ethiopia"],
+    "answer": "Nigeria"
+  },
+  {
+    "category": "Government",
+    "questionText": "In which African country is the presidency rotated between the country's major ethnic groups every eight years as part of a power-sharing agreement?",
+    "possibleAnswers": ["Rwanda", "Burundi", "Uganda", "Kenya"],
+    "answer": "Burundi"
+  },
+  {
+    "category": "Government",
+    "questionText": "What is the term for the traditional council of elders that plays a significant role in decision-making and conflict resolution in many African societies?",
+    "possibleAnswers": [
+      "Senate",
+      "Council of Chiefs",
+      "Tribal Assembly",
+      "House of Elders"
+    ],
+    "answer": "Council of Chiefs"
+  },
+  {
+    "category": "Government",
+    "questionText": "Which African country has the oldest written constitution in Africa, adopted in 1957 upon gaining independence from British colonial rule?",
+    "possibleAnswers": ["Ghana", "Nigeria", "Egypt", "Kenya"],
+    "answer": "Ghana"
+  },
+  {
+    "category": "Government",
+    "questionText": "What is the name of the pan-African organization founded in 1963 to promote unity and cooperation among African countries?",
+    "possibleAnswers": [
+      "African Union",
+      "League of African Nations",
+      "Organization of African Unity",
+      "United African Assembly"
+    ],
+    "answer": "Organization of African Unity"
+  },
+  {
+    "category": "Government",
+    "questionText": "What is the name of the highest court in Africa, established in 2001 to ensure adherence to the principles of human and peoples' rights as outlined in the African Charter on Human and Peoples' Rights?",
+    "possibleAnswers": [
+      "African Court of Justice",
+      "International Criminal Court",
+      "African Court of Human and Peoples' Rights",
+      "Court of Justice of the African Union"
+    ],
+    "answer": "African Court of Human and Peoples' Rights"
+  },
+  {
+    "category": "Government",
+    "questionText": "Which African country is known for its unique system of government called \"direct democracy,\" where citizens participate directly in decision-making through community meetings?",
+    "possibleAnswers": ["Somalia", "Liberia", "Eritrea", "Mauritius"],
+    "answer": "Mauritius"
+  },
+  {
+    "category": "Government",
+    "questionText": "In which African country is the president elected through a system of indirect suffrage, where an electoral college called the National Assembly selects the president?",
+    "possibleAnswers": ["Egypt", "Nigeria", "Kenya", "Madagascar"],
+    "answer": "Egypt"
+  },
+  {
+    "category": "Government",
+    "questionText": "What is the name of the military junta that ruled Sudan from 1989 to 2019, led by Omar al-Bashir?",
+    "possibleAnswers": [
+      "National Transitional Council",
+      "Revolutionary Command Council",
+      "National Congress Party",
+      "Sudanese People's Liberation Movement"
+    ],
+    "answer": "National Congress Party"
+  },
+  {
+    "category": "Geography",
+    "questionText": "What is the capital city of Nigeria?",
+    "possibleAnswers": ["Lagos", "Abuja", "Accra", "Nairobi"],
+    "answer": "Abuja"
+  },
+  {
+    "category": "Geography",
+    "questionText": "Which African country is known as the \"Land of a Thousand Hills\"?",
+    "possibleAnswers": ["Rwanda", "Kenya", "Uganda", "Ethiopia"],
+    "answer": "Rwanda"
+  },
+  {
+    "category": "Geography",
+    "questionText": "Which desert covers much of North Africa and is the largest hot desert in the world?",
+    "possibleAnswers": [
+      "Sahara Desert",
+      "Kalahari Desert",
+      "Namib Desert",
+      "Arabian Desert"
+    ],
+    "answer": "Sahara Desert"
+  },
+  {
+    "category": "Geography",
+    "questionText": "What is the tallest mountain in Africa?",
+    "possibleAnswers": [
+      "Mount Kilimanjaro",
+      "Mount Kenya",
+      "Mount Elgon",
+      "Mount Rwenzori"
+    ],
+    "answer": "Mount Kilimanjaro"
+  },
+  {
+    "category": "Geography",
+    "questionText": "Which African country is known as the \"Pearl of Africa\"?",
+    "possibleAnswers": ["Tanzania", "Madagascar", "Uganda", "Seychelles"],
+    "answer": "Uganda"
+  },
+  {
+    "category": "Geography",
+    "questionText": "Which river is the longest in Africa?",
+    "possibleAnswers": [
+      "Nile River",
+      "Congo River",
+      "Niger River",
+      "Zambezi River"
+    ],
+    "answer": "Nile River"
+  },
+  {
+    "category": "Geography",
+    "questionText": "In which African country would you find the ancient city of Carthage?",
+    "possibleAnswers": ["Egypt", "Tunisia", "Libya", "Algeria"],
+    "answer": "Tunisia"
+  },
+  {
+    "category": "Geography",
+    "questionText": "Which African country is the only one to have Spanish as its official language?",
+    "possibleAnswers": [
+      "Equatorial Guinea",
+      "Angola",
+      "Mozambique",
+      "Guinea-Bissau"
+    ],
+    "answer": "Equatorial Guinea"
+  },
+  {
+    "category": "Geography",
+    "questionText": "What is the largest lake in Africa by surface area?",
+    "possibleAnswers": [
+      "Lake Victoria",
+      "Lake Tanganyika",
+      "Lake Malawi",
+      "Lake Turkana"
+    ],
+    "answer": "Lake Victoria"
+  },
+  {
+    "category": "Geography",
+    "questionText": "What is the name of the famous rock formation in the Namib Desert known for its distinctive red color?",
+    "possibleAnswers": ["Table Mountain", "Ayers Rock", "Petra", "Sossusvlei"],
+    "answer": "Sossusvlei"
+  },
+  {
+    "category": "Geography",
+    "questionText": "Which African country is home to the ruins of the ancient city of Great Zimbabwe?",
+    "possibleAnswers": ["Zambia", "Zimbabwe", "Malawi", "Botswana"],
+    "answer": "Zimbabwe"
+  },
+  {
+    "category": "Geography",
+    "questionText": "What is the capital city of South Africa?",
+    "possibleAnswers": [
+      "Pretoria",
+      "Cape Town",
+      "Johannesburg",
+      "Bloemfontein"
+    ],
+    "answer": "Pretoria"
+  },
+  {
+    "category": "Geography",
+    "questionText": "Which African country is located at the westernmost point of the African mainland?",
+    "possibleAnswers": ["Senegal", "Guinea", "Mauritania", "Liberia"],
+    "answer": "Senegal"
+  },
+  {
+    "category": "Geography",
+    "questionText": "What is the name of the volcanic mountain range that runs along the eastern border of the Democratic Republic of the Congo?",
+    "possibleAnswers": [
+      "Rwenzori Mountains",
+      "Atlas Mountains",
+      "Virunga Mountains",
+      "Simien Mountains"
+    ],
+    "answer": "Virunga Mountains"
+  }
+]

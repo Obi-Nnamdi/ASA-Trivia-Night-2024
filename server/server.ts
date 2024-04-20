@@ -61,7 +61,7 @@ app.use((req: Request, _: Response, next: NextFunction) => {
 
 // Server State Variables
 const gameMap = new Map<string, TriviaGame>(); // Keeps track of the games we have running on the server.
-const questionFile = "gameQuestions.json"; // File where game questions are stored.
+const questionFile = "official_asa_questions.json"; // File where game questions are stored.
 
 // ------ Server Routes ------
 const gameRouter = express.Router();
