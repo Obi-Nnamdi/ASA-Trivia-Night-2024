@@ -1,11 +1,15 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
-import { currentQuestionResponse } from "../../server/serverTypeDefs"
+import {
+    currentQuestionResponse,
+    submitAnswerResponse,
+} from "../../server/serverTypeDefs"
 import { Link, Navigate } from "react-router-dom"
 import { STANDINGS_PAGE_ROUTE_NAME } from "./pageRouteNames"
 import QuestionTextDisplay from "../components/QuestionTextDisplay"
 import QuestionCategoryDisplay from "../components/QuestionCategoryDisplay"
 import QuestionChoicesDisplay from "../components/QuestionChoicesDisplay"
+import "./QuestionAnswerPage.css"
 
 // Page for answering a game's current question.
 // Props:
@@ -17,6 +21,8 @@ interface Props {
 function QuestionAnswerPage({ gameId }: Props) {
     const [currentQuestion, setcurrentQuestion] =
         useState<currentQuestionResponse>()
+
+    const [answerFeedback, setAnswerFeedback] = useState<submitAnswerResponse>()
 
     // Get the current trivia question from the server
     useEffect(() => {
@@ -34,12 +40,16 @@ function QuestionAnswerPage({ gameId }: Props) {
     }
 
     // Define function for randomly answering the current question
-    function answerQuestion(answer: string) {
-        if (currentQuestion !== undefined) {
-            axios.post(`/api/game/${gameId}/submitAnswer`, {
-                answer: answer,
-                questionId: currentQuestion.id,
-            })
+    async function answerQuestion(answer: string) {
+        // Only submit the answer to the server if we have a question and don't have our answer feedback
+        if (currentQuestion !== undefined && answerFeedback === undefined) {
+            const response: submitAnswerResponse = (
+                await axios.post(`/api/game/${gameId}/submitAnswer`, {
+                    answer: answer,
+                    questionId: currentQuestion.id,
+                })
+            ).data
+            setAnswerFeedback(response)
         }
     }
     // Display the current game question.
@@ -47,18 +57,35 @@ function QuestionAnswerPage({ gameId }: Props) {
         <div>
             {currentQuestion !== undefined && (
                 <>
-                    <QuestionCategoryDisplay
-                        category={currentQuestion.category}
-                        player={currentQuestion.assignedPlayer.name}
-                    />
-                    <QuestionTextDisplay
-                        questionText={currentQuestion.questionText}
-                    />
-                    <QuestionChoicesDisplay
-                        answerChoices={currentQuestion.possibleAnswers}
-                        submitAnswer={answerQuestion}
-                    />
-                    <Link to={STANDINGS_PAGE_ROUTE_NAME}>Next.</Link>{" "}
+                    <div id="QuestionAnswerPage-toolbar">
+                        <p>Timer</p>
+                        <Link
+                            id="QuestionAnswerPage-nextButton"
+                            style={
+                                answerFeedback === undefined
+                                    ? { opacity: 0.3, pointerEvents: "none" }
+                                    : {}
+                            }
+                            className="u-remove-underline importantButton"
+                            to={STANDINGS_PAGE_ROUTE_NAME}
+                        >
+                            Next
+                        </Link>
+                    </div>
+                    <div className="u-flex-column u-align-center u-max-height u-space-between">
+                        <QuestionCategoryDisplay
+                            category={currentQuestion.category}
+                            player={currentQuestion.assignedPlayer.name}
+                        />
+                        <QuestionTextDisplay
+                            questionText={currentQuestion.questionText}
+                        />
+                        <QuestionChoicesDisplay
+                            answerChoices={currentQuestion.possibleAnswers}
+                            answerFeedback={answerFeedback}
+                            submitAnswer={answerQuestion}
+                        />
+                    </div>
                 </>
             )}
         </div>

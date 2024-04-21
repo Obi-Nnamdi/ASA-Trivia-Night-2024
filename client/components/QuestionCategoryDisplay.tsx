@@ -7,9 +7,12 @@ interface Props {
 function QuestionCategoryDisplay({ category, player }: Props) {
     // TODO: change styling depending on question category.
     return (
-        <div>
-            <h1>{category}</h1>
-            <h2>{player}</h2>
+        <div
+            className="u-flex-column u-align-center u-space-between"
+            id="QuestionAnswerPage-questionCategoryDisplay"
+        >
+            <h1 className="u-no-margin u-center-text">{category}</h1>
+            <h2 className="u-no-margin u-center-text">{player}</h2>
         </div>
     )
 }

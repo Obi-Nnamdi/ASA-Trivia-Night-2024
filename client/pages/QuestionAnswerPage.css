@@ -1,0 +1,106 @@
+#QuestionAnswerPage-toolbar {
+    position: absolute;
+    top: 6vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#QuestionAnswerPage-nextButton {
+    --next-button-font-size: 2.5rem;
+    font-size: var(--next-button-font-size);
+    padding: 0 1.5rem;
+    padding-top: calc(var(--next-button-font-size) / 4)
+}
+
+#QuestionAnswerPage-questionChoicesContainer {
+    width: 90%;
+    height: 13%;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    container-type: inline-size;
+}
+
+#QuestionAnswerPage-questionChoicesContainer span {
+    /* TODO: if neeeded, could manually use text length to style font size with js */
+    font-size: 1.5cqw;
+    display: block;
+}
+
+#QuestionAnswerPage-questionChoicesContainer button {
+    /* border-radius: var(--standard-border-radius); */
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    border: none;
+    width: 100%;
+    height: 60%;
+    background: none;
+    transition: background 200ms, transform 200ms ease;
+}
+
+.QuestionAnswerPage-questionChoiceContainer {
+    width: 21%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.QuestionAnswerPage-questionChoiceContainer>div {
+    height: 25%;
+}
+
+.QuestionAnswerPage-questionChoiceContainer>div>img {
+    height: 100%;
+}
+
+#QuestionAnswerPage-questionChoicesContainer button:hover {
+    background: rgba(75, 75, 75, 0.27);
+    transform: scale(1.05);
+}
+
+#QuestionAnswerPage-questionTextDisplay {
+    height: 52%;
+    width: 80%;
+    background-position-y: center;
+    background-position-x: center;
+    background-image: url("../assets/vectors/CardBg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    container-type: inline-size;
+}
+
+#QuestionAnswerPage-questionTextDisplay p {
+    width: 65cqmin;
+    height: 80%;
+
+    font-family: var(--secondary-font);
+    color: var(--inverted-primary-color);
+    font-size: 3cqmin;
+    /* Min: 3, max: 4-5? */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#QuestionAnswerPage-questionCategoryDisplay {
+    height: 9%;
+    margin-top: 2rem;
+}
+
+#QuestionAnswerPage-questionCategoryDisplay h1 {
+    font-family: var(--tertiary-accent-font);
+    font-size: 2.5rem;
+}
+
+#QuestionAnswerPage-questionCategoryDisplay h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+}

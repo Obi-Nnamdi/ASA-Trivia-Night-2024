@@ -5,8 +5,8 @@ interface Props {
 
 function QuestionTextDisplay({ questionText }: Props) {
     return (
-        <div>
-            <p>{questionText}</p>
+        <div id="QuestionAnswerPage-questionTextDisplay">
+            <p className="u-no-margin u-center-text">{questionText}</p>
         </div>
     )
 }

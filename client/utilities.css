@@ -47,6 +47,7 @@
     --tertiary-accent-font: Gilgongo Doro;
     --primary-color: #ffffff;
     --dimmed-primary-color: rgba(255, 255, 255, 0.4);
+    --inverted-primary-color: black;
     --standard-border-radius: 10px;
 
     --yellow-kente-gradient: linear-gradient(180deg,
@@ -73,6 +74,10 @@
     margin: 0;
 }
 
+.u-center-text {
+    text-align: center;
+}
+
 .u-flex-column {
     display: flex;
     flex-direction: column;
@@ -85,6 +90,10 @@
 
 .u-align-center {
     align-items: center;
+}
+
+.u-align-baseline {
+    align-items: baseline;
 }
 
 .u-justify-center {

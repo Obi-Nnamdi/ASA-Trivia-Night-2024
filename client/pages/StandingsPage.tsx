@@ -54,7 +54,7 @@ function StandingsPage({ gameId }: Props) {
                     />
                 ))}
             </div>
-            {gameState.gameStatus === TriviaGameStatus.IN_PROGRESS ? (
+            {gameState.winner === undefined ? (
                 <Link
                     className="importantButton u-remove-underline StandingsPage-nextPageButton"
                     to={".." + QUESTION_REVEAL_PAGE_ROUTE_NAME}
