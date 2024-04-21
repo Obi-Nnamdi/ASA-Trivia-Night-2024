@@ -25,11 +25,14 @@
 }
 
 .StandingsPage-incompleteCategory {
-    background: white;
+    /* Change the icon color to white */
+    /* Filters computed here: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(107deg) brightness(105%) contrast(101%);
 }
 
 .StandingsPage-completedCategory {
-    background: #CDBC78;
+    /* Change the icon color to #CDBC78 */
+    filter: invert(72%) sepia(37%) saturate(358%) hue-rotate(11deg) brightness(96%) contrast(96%);
 }
 
 .StandingsPage-categoryIcon:nth-child(1) {
