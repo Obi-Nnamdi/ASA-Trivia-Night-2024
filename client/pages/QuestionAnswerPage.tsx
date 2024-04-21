@@ -58,7 +58,7 @@ function QuestionAnswerPage({ gameId }: Props) {
             {currentQuestion !== undefined && (
                 <>
                     <div id="QuestionAnswerPage-toolbar">
-                        <p>Timer</p>
+                        <p className="u-no-margin">30s</p>
                         <Link
                             id="QuestionAnswerPage-nextButton"
                             style={

@@ -8,6 +8,11 @@
     justify-content: space-between;
 }
 
+#QuestionAnswerPage-toolbar>p {
+    font-family: var(--tertiary-accent-font);
+    font-size: 2.5rem;
+}
+
 #QuestionAnswerPage-nextButton {
     --next-button-font-size: 2.5rem;
     font-size: var(--next-button-font-size);

@@ -37,7 +37,7 @@ body {
 #QuestionRevealPage-questionRevealCarousel {
     height: 100%;
     width: 55%;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #QuestionRevealPage-nextPageButton {
