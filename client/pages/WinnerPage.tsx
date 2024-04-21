@@ -6,6 +6,7 @@ import {
     LANDING_PAGE_ROUTE_NAME,
     STANDINGS_PAGE_ROUTE_NAME,
 } from "./pageRouteNames"
+import "./WinnerPage.css"
 
 // Page for displaying the winner of a game.
 // Props:
@@ -45,11 +46,22 @@ function WinnerPage({ gameId }: Props) {
     // Display the current game winner, and add a button to navigate to the landing page.
     // TODO: end game.
     return (
-        <>
-            <h1>Winner</h1>
-            <h2>{gameState.winner.name}</h2>
-            <Link to={".." + LANDING_PAGE_ROUTE_NAME}>Back to Home Page.</Link>
-        </>
+        <div className="u-flex-column u-justify-center u-max-height">
+            <div
+                className="u-flex-column u-align-center u-space-between"
+                id="WinnerPage-mainContainer"
+            >
+                <h1 className="u-no-margin">Winner</h1>
+                <h2 className="u-no-margin">{gameState.winner.name}</h2>
+                <Link
+                    className="u-remove-underline importantButton"
+                    id="WinnerPage-nextButton"
+                    to={".." + LANDING_PAGE_ROUTE_NAME}
+                >
+                    Back to Home Page.
+                </Link>
+            </div>
+        </div>
     )
 }
 
