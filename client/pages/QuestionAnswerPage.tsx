@@ -54,7 +54,7 @@ function QuestionAnswerPage({ gameId }: Props) {
     }
     // Display the current game question.
     return (
-        <div>
+        <div id="QuestionAnswerPage-mainContainer">
             {currentQuestion !== undefined && (
                 <>
                     <div id="QuestionAnswerPage-toolbar">

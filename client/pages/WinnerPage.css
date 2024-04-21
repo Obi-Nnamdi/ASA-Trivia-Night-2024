@@ -1,14 +1,37 @@
 #WinnerPage-mainContainer {
+    background-image: url("../assets/images/backgrounds/WinnerPage.jpeg");
+    background-size: 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#WinnerPage-mainContainer::before {
+    content: "";
+    /* Important */
+    z-index: -1;
+    /* Important */
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: brightness(.15);
+}
+
+#WinnerPage-mainContentContainer {
     height: 87%
 }
 
-#WinnerPage-mainContainer h1 {
+#WinnerPage-mainContentContainer h1 {
     font-family: var(--primary-font);
     font-weight: normal;
     font-size: var(--page-title-font-size);
 }
 
-#WinnerPage-mainContainer h2 {
+#WinnerPage-mainContentContainer h2 {
     font-family: var(--accent-font);
     width: 70%;
     text-align: center;

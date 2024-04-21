@@ -42,7 +42,10 @@ function StandingsPage({ gameId }: Props) {
 
     // Display the current game state, and add a button to navigate to the question reveal page (or winner page if the game is over).
     return (
-        <div className="u-flex-column main-page-centered-container">
+        <div
+            className="u-flex-column main-page-centered-container"
+            id="StandingsPage-mainContainer"
+        >
             <h1 className="page-main-title">Standings</h1>
             <div className="u-flex-row StandingsPage-teamStandingsContainer">
                 {gameState.playerStates.map((playerState, index) => (

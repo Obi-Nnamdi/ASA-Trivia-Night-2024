@@ -138,6 +138,13 @@
     font-weight: 400;
 
     font-size: var(--button-font-size);
+    transition: filter 300ms ease, transform 200ms ease;
+    will-change: filter, transform;
+}
+
+.importantButton:hover {
+    filter: brightness(160%) saturate(1.2) hue-rotate(-20deg);
+    transform: scale(1.02);
 }
 
 .page-main-title {

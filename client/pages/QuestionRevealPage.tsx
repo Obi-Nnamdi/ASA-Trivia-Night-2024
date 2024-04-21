@@ -63,7 +63,7 @@ function QuestionRevealPage({ gameId }: Props) {
 
     // Display the current game question and navigate to the next page.
     return (
-        <div>
+        <div id="QuestionRevealPage-mainContainer">
             {currentQuestion && gameState && currentPlayer && (
                 <div className="u-flex-row u-align-center u-space-between u-max-height">
                     <div

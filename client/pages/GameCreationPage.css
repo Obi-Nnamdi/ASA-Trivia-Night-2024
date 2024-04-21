@@ -1,4 +1,25 @@
-/* #GameCreation-mainContainer {} */
+#GameCreation-mainContainer {
+    background-image: url("../assets/images/backgrounds/TeamCreationPage.jpeg");
+    background-size: 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#GameCreation-mainContainer::before {
+    content: "";
+    /* Important */
+    z-index: -1;
+    /* Important */
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: brightness(.2);
+}
 
 #GameCreation-addTeamButton {
     font-family: var(--primary-font);

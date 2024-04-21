@@ -14,14 +14,34 @@
     padding-left: 50px
 }
 
+/* Background setting trick from https://stackoverflow.com/a/47097353/20791863. */
 #LandingPage-mainContainer {
+    background-image: url("../assets/images/backgrounds/LandingPage.jpeg");
+    background-size: 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#LandingPage-mainContainer::before {
+    content: "";
+    /* Important */
+    z-index: -1;
+    /* Important */
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: brightness(.15) saturate(.8);
+}
+
+
+#LandingPage-mainContentContainer {
     /* Crops the main page content to prevent scrolling */
     position: relative;
-
-    /* Set background */
-    /* background: url("../assets/images/Texturelabs_LensFX_174L.jpg") lightgray 50% / cover no-repeat; */
-    background: url("../assets/images/LensFX174.png") rgb(0, 0, 0) 50% / cover no-repeat;
-    background-blend-mode: exclusion;
 }
 
 #LandingPage-title {

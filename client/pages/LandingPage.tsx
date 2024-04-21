@@ -15,32 +15,37 @@ function LandingPage() {
 
     // Render the landing page.
     return (
-        <div
-            id="LandingPage-mainContainer"
-            className="u-hide-overflow u-max-height"
-        >
-            <div className="LandingPage-leftIndent u-flex-column">
-                <h1 id="LandingPage-title" className="u-no-margin">
-                    ASA Jeopardy Night
-                </h1>
-                <h2 id="LandingPage-subtitle" className="u-no-margin">
-                    Spring 2024
-                </h2>
-                <button
-                    className="importantButton"
-                    id="LandingPage-startButton"
-                    onClick={createGame}
-                >
-                    <p id="LandingPage-startButtonText" className="u-no-margin">
-                        Start
-                    </p>
-                </button>
+        <div id="LandingPage-mainContainer">
+            <div
+                id="LandingPage-mainContentContainer"
+                className="u-hide-overflow u-max-height"
+            >
+                <div className="LandingPage-leftIndent u-flex-column">
+                    <h1 id="LandingPage-title" className="u-no-margin">
+                        ASA Jeopardy Night
+                    </h1>
+                    <h2 id="LandingPage-subtitle" className="u-no-margin">
+                        Spring 2024
+                    </h2>
+                    <button
+                        className="importantButton"
+                        id="LandingPage-startButton"
+                        onClick={createGame}
+                    >
+                        <p
+                            id="LandingPage-startButtonText"
+                            className="u-no-margin"
+                        >
+                            Start
+                        </p>
+                    </button>
+                </div>
+                <img
+                    id="LandingPage-AfricaMap"
+                    src={CroppedAfricaMap}
+                    alt="Africa Map"
+                />
             </div>
-            <img
-                id="LandingPage-AfricaMap"
-                src={CroppedAfricaMap}
-                alt="Africa Map"
-            />
         </div>
     )
 }

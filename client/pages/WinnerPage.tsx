@@ -46,10 +46,13 @@ function WinnerPage({ gameId }: Props) {
     // Display the current game winner, and add a button to navigate to the landing page.
     // TODO: end game.
     return (
-        <div className="u-flex-column u-justify-center u-max-height">
+        <div
+            className="u-flex-column u-justify-center u-max-height"
+            id="WinnerPage-mainContainer"
+        >
             <div
                 className="u-flex-column u-align-center u-space-between"
-                id="WinnerPage-mainContainer"
+                id="WinnerPage-mainContentContainer"
             >
                 <h1 className="u-no-margin">Winner</h1>
                 <h2 className="u-no-margin">{gameState.winner.name}</h2>
