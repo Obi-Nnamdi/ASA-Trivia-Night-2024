@@ -1,5 +1,5 @@
 .StandingsPage-teamDisplay {
-    font-family: Naluka;
+    font-family: var(--primary-font);
     font-size: var(--main-font-size);
     width: 17rem;
     text-align: center;
@@ -21,8 +21,15 @@
 
 .StandingsPage-categoryIcon {
     height: 4.5rem;
-    background: white;
     margin-top: 1rem;
+}
+
+.StandingsPage-incompleteCategory {
+    background: white;
+}
+
+.StandingsPage-completedCategory {
+    background: #CDBC78;
 }
 
 .StandingsPage-categoryIcon:nth-child(1) {

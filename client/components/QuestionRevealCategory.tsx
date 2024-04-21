@@ -4,12 +4,23 @@ interface Props {
     completed: boolean
 }
 
+const baseClassName = "QuestionRevealPage-categoryCarouselCard" // base CSS class for styling carousel cards.
+const generalCompletedClass = "QuestionRevealPage-completedCarouselCard"
+
 // TODO: have different styling based on completion status.
 function QuestionRevealCategory({ category, completed }: Props) {
+    // Build the specific CSS class for our category card based on the given category
+    // and its completion status.
+    const cardCategoryClass = `${baseClassName}-${category}${
+        completed ? "-Completed" : ""
+    }`
     return (
-        <div>
-            <p>Category: {category}</p>
-            <p>Completed: {completed ? "Yes" : "No"}</p>
+        <div
+            className={`u-flex-column u-justify-center ${baseClassName} ${cardCategoryClass} ${
+                completed ? generalCompletedClass : ""
+            }`}
+        >
+            <p className="u-no-margin">{category}</p>
         </div>
     )
 }

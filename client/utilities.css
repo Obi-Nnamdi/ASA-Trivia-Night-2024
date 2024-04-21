@@ -87,6 +87,10 @@
     align-items: center;
 }
 
+.u-justify-center {
+    justify-content: center;
+}
+
 .u-hide-overflow {
     overflow: hidden;
 }
@@ -101,6 +105,14 @@
 
 .u-remove-underline {
     text-decoration: none;
+}
+
+.u-space-between {
+    justify-content: space-between;
+}
+
+.u-primary-font-family {
+    font-family: var(--primary-font);
 }
 
 /* Define Global Classes */

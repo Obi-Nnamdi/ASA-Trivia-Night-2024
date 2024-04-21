@@ -20,8 +20,7 @@ function QuestionRevealCarousel({
         )
     })
     return (
-        <div>
-            <h3>{selectedCategory}</h3>
+        <div id="QuestionRevealPage-questionRevealCarousel">
             {allCategories.map((category, index) => (
                 <QuestionRevealCategory
                     key={index}

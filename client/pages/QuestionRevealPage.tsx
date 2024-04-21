@@ -8,6 +8,8 @@ import { Link, Navigate } from "react-router-dom"
 import { QUESTION_ANSWER_PAGE_ROUTE_NAME } from "./pageRouteNames"
 import { PlayerState } from "../../server/TriviaGameTypeDefs"
 import QuestionRevealCarousel from "../components/QuestionRevealCarousel"
+import "./QuestionRevealPage.css"
+import RightArrow from "../assets/vectors/right_arrow.svg"
 
 // Page for revealing the question for a game.
 // Props:
@@ -63,18 +65,32 @@ function QuestionRevealPage({ gameId }: Props) {
     return (
         <div>
             {currentQuestion && gameState && currentPlayer && (
-                <>
-                    <h1>Question {numAskedQuestions + 1}</h1>
-                    <h1>{currentPlayer.name}</h1>
+                <div className="u-flex-row u-align-center u-space-between u-max-height">
+                    <div
+                        className="u-flex-column u-align-center u-primary-font-family"
+                        id="QuestionRevealPage-contextContainer"
+                    >
+                        <h1>Question {numAskedQuestions + 1}</h1>
+                        <h1>{currentPlayer.name}</h1>
+                    </div>
                     <QuestionRevealCarousel
                         allCategories={gameState.questionCategories}
                         completedCategories={currentPlayer.completedCategories}
                         selectedCategory={currentQuestion.category}
                     />
-                    <Link to={".." + QUESTION_ANSWER_PAGE_ROUTE_NAME}>
-                        Answer Question.
-                    </Link>
-                </>
+                    <div
+                        className="u-flex-column u-align-center"
+                        id="QuestionRevealPage-nextPageButtonContainer"
+                    >
+                        <Link
+                            id="QuestionRevealPage-nextPageButton"
+                            className="importantButton"
+                            to={".." + QUESTION_ANSWER_PAGE_ROUTE_NAME}
+                        >
+                            <img src={RightArrow} />
+                        </Link>
+                    </div>
+                </div>
             )}
         </div>
     )

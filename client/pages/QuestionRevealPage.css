@@ -1,0 +1,108 @@
+body {
+    --sports-color: #4F7CAC;
+    --geography-color: #074F57;
+    --history-color: #CCC9A1;
+    --entertainment-color: #BF4342;
+    --government-color: #E7D7C1;
+}
+
+#QuestionRevealPage-contextContainer {
+    height: 100%;
+    width: 25%;
+    justify-content: space-between;
+}
+
+#QuestionRevealPage-contextContainer>h1 {
+    margin: 0;
+    font-size: var(--main-font-size);
+    font-weight: normal;
+    text-align: center;
+}
+
+#QuestionRevealPage-contextContainer>h1:first-child {
+    margin-top: calc(25% - var(--main-font-size) / 4);
+}
+
+#QuestionRevealPage-contextContainer>h1:last-child {
+    margin-bottom: 25%;
+}
+
+
+#QuestionRevealPage-nextPageButtonContainer {
+    height: 100%;
+    justify-content: center;
+    width: 20%;
+}
+
+#QuestionRevealPage-questionRevealCarousel {
+    height: 100%;
+    width: 55%;
+    overflow: scroll;
+}
+
+#QuestionRevealPage-nextPageButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 1.5rem;
+}
+
+.QuestionRevealPage-categoryCarouselCard {
+    margin-bottom: 5rem;
+    height: 9rem;
+    border-radius: var(--standard-border-radius);
+
+    font-family: var(--tertiary-accent-font);
+    font-size: var(--main-font-size);
+    text-align: center;
+}
+
+/* Incompleted Question Styles */
+
+.QuestionRevealPage-categoryCarouselCard-Geography {
+    background: var(--geography-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-Entertainment {
+    background: var(--entertainment-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-History {
+    background: var(--history-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-Sports {
+    background: var(--sports-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-Government {
+    background: var(--government-color);
+}
+
+/* Completed Question Styles */
+.QuestionRevealPage-completedCarouselCard {
+    border-width: .5rem;
+    border-style: dashed;
+    stroke-dashoffset: 10px;
+    color: var(--dimmed-primary-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-Geography-Completed {
+    border-color: var(--geography-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-Entertainmen-Completedt {
+    border-color: var(--entertainment-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-History-Completed {
+    border-color: var(--history-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-Sports-Completed {
+    border-color: var(--sports-color);
+}
+
+.QuestionRevealPage-categoryCarouselCard-Government-Completed {
+    border-color: var(--government-color);
+}
