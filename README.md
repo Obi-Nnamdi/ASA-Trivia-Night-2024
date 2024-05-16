@@ -8,7 +8,9 @@
 This is the code for the Spring 2024 Trivia Night website for the African Students' Association. It's made with Typescript, using Vite + React for the Frontend and Express for the Backend.
 
 ## Starting the Website
-Run `npm run server` in one terminal and `npm run dev` in another to start the backend and frontend respectively. Then, navigate to the localhost link given by the `npm run dev` command (should be [http://localhost:5173](http://localhost:5173)).
+After cloning the repo, run `npm install` in the root folder to install the required packages.
+
+Then, run `npm run server` in one terminal and `npm run dev` in another to start the backend and frontend respectively. Then, navigate to the localhost link given by the `npm run dev` command (should be [http://localhost:5173](http://localhost:5173)).
 
 ## Game Format
 The game's format is based loosely off of the app "Trivia Crack", where teams compete to be the first to answer questions from six different categories. 
